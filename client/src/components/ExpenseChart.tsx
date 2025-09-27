@@ -72,7 +72,7 @@ export default function ExpenseChart({
             const value = context.parsed || context.raw;
             const total = context.dataset.data.reduce((a: number, b: number) => a + b, 0);
             const percentage = ((value / total) * 100).toFixed(1);
-            return `${context.label}: $${value.toLocaleString()} (${percentage}%)`;
+            return `${context.label}: ₹${value.toLocaleString()} (${percentage}%)`;
           },
         },
       },
@@ -99,7 +99,7 @@ export default function ExpenseChart({
             const value = context.parsed.y || context.raw;
             const total = context.dataset.data.reduce((a: number, b: number) => a + b, 0);
             const percentage = ((value / total) * 100).toFixed(1);
-            return `${context.label}: $${value.toLocaleString()} (${percentage}%)`;
+            return `${context.label}: ₹${value.toLocaleString()} (${percentage}%)`;
           },
         },
       },
@@ -109,7 +109,7 @@ export default function ExpenseChart({
         beginAtZero: true,
         ticks: {
           callback: function(value: any) {
-            return '$' + value.toLocaleString();
+            return '₹' + value.toLocaleString();
           },
         },
       },
@@ -155,7 +155,7 @@ export default function ExpenseChart({
             {totalAmount && (
               <Badge variant="outline" className="text-xs">
                 <TrendingUp className="h-3 w-3 mr-1" />
-                ${totalAmount.toLocaleString()} total
+                ₹{totalAmount.toLocaleString()} total
               </Badge>
             )}
           </div>

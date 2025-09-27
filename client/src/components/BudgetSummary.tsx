@@ -24,7 +24,7 @@ export default function BudgetSummary({
   totalBudget, 
   totalSpent, 
   monthlyIncome,
-  currency = "$",
+  currency = "₹",
   period = "December 2024"
 }: BudgetSummaryProps) {
   const remaining = totalBudget - totalSpent;

@@ -102,7 +102,7 @@ export default function TransactionItem({
               <div className={`font-semibold ${
                 isIncome ? 'text-primary' : 'text-foreground'
               }`} data-testid={`text-amount-${id}`}>
-                {isIncome ? '+' : '-'}${Math.abs(amount).toLocaleString()}
+                {isIncome ? '+' : '-'}₹{Math.abs(amount).toLocaleString()}
               </div>
               <div className="flex items-center gap-1 text-xs text-muted-foreground">
                 {isIncome ? (

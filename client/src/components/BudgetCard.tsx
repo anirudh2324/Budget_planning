@@ -17,7 +17,7 @@ export default function BudgetCard({
   category, 
   spent, 
   budget, 
-  currency = "$", 
+  currency = "₹", 
   trend, 
   trendPercentage 
 }: BudgetCardProps) {

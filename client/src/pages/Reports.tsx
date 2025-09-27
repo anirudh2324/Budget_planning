@@ -62,14 +62,14 @@ export default function Reports() {
     {
       title: "Highest Spending Category",
       value: "Bills & Utilities",
-      amount: "$1,200",
+      amount: "₹1,200",
       trend: "up",
       percentage: 2,
       description: "2% increase from last month"
     },
     {
       title: "Average Daily Spending", 
-      value: "$102.58",
+      value: "₹102.58",
       amount: "",
       trend: "down",
       percentage: 8,
@@ -86,7 +86,7 @@ export default function Reports() {
     {
       title: "Savings Rate",
       value: "23.6%",
-      amount: "$1,530",
+      amount: "₹1,530",
       trend: "up",
       percentage: 12,
       description: "12% increase from last month"
@@ -253,15 +253,15 @@ export default function Reports() {
             <div className="space-y-2">
               <div className="flex justify-between">
                 <span className="text-sm text-muted-foreground">Total Expenses</span>
-                <span className="font-medium">$3,492</span>
+                <span className="font-medium">₹3,492</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-sm text-muted-foreground">Average per day</span>
-                <span className="font-medium">$112.65</span>
+                <span className="font-medium">₹112.65</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-sm text-muted-foreground">Largest expense</span>
-                <span className="font-medium">$1,200</span>
+                <span className="font-medium">₹1,200</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-sm text-muted-foreground">Total transactions</span>
@@ -295,7 +295,7 @@ export default function Reports() {
               </div>
               <div className="flex justify-between">
                 <span className="text-sm text-muted-foreground">Money saved</span>
-                <span className="font-medium text-primary">$1,508</span>
+                <span className="font-medium text-primary">₹1,508</span>
               </div>
             </div>
           </CardContent>
@@ -323,7 +323,7 @@ export default function Reports() {
                   </div>
                 </div>
                 <div className="text-sm font-medium">
-                  ${category.amount.toLocaleString()}
+                  ₹{category.amount.toLocaleString()}
                 </div>
               </div>
             ))}
